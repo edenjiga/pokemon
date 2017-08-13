@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <!-- Example row of columns -->
+    <div class="container" *ngIf="pokemones">
+        <div class="col-sm-6 col-md-3" *ngFor="let pokemon of pokemones">
+          <a class="btn btn-default" href="#" role="button"><img class="img-responsive center-block" 
+            src="http://pokeapi.co/media/sprites/pokemon/{{pokemon._id}}.png">
+            <p class="{{pokemon.name}}">{{pokemon.name}}</p>
+            </a>
+        </div>
+    </div>
+</div>
